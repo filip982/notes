@@ -69,4 +69,28 @@ ON
 ORDER BY 
     c.CustomerId
 ```
+![alt text](inner-join-selection.png)
 
+## LEFT OUTER JOIN
+```
+SELECT *
+FROM
+	Invoice as i
+LEFT OUTER JOIN
+	Customer as c
+ON
+    i.CustomerId = c.CustomerId
+```
+![alt text](left-outer-join-selection.png)
+
+## RIGHT OUTER JOIN
+```
+SELECT *
+FROM
+	Invoice as i
+RIGHT OUTER JOIN
+	Customer as c
+ON
+    i.CustomerId = c.CustomerId
+```
+![alt text](right-outer-join-selection.png)
